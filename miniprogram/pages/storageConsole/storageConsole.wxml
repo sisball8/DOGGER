@@ -1,0 +1,29 @@
+<!--pages/storageConsole/storageConsole.wxml-->
+<view class="container">
+
+  <view class="list">
+    <view class="list-item" bindtap="testCgi">
+      <text class="black">上传成功Uploaded successfully</text>
+    </view>
+    <view class="list-item">
+      <text class="request-text">file文件 ID：{{fileID}}</text>
+    </view>
+    <view class="list-item">
+      <text class="request-text">云文件路径Cloud file path：{{cloudPath}}</text>
+    </view>
+    <view class="list-item">
+      <image class="image1" src="{{imagePath}}" mode="aspectFit"></image>
+    </view>
+  </view>
+
+  <view class="guide">
+    <!-- <image class="image1" src="{{imagePath}}" mode="aspectFit"></image> -->
+    <text class="headline">云开发控制台中管理文件Manage files in the cloud development console</text>
+    <text class="p">1. 打开云开发控制台Open the cloud development console</text>
+    <image class="image1" src="../../images/console-entrance.png" mode="aspectFit"></image>
+    <text class="p">2. 切换到文件管理标签页Switch to the file management tab</text>
+    <text class="p">3. 可查看文件列表、管理权限Can view file list, manage permissions</text>
+    <text class="p">4. 详细的教程和 API 文件，可点击调试器中打印的链接查看Detailed tutorials and API files can be viewed by clicking the link printed in the debugger</text>
+  </view>
+
+</view>

@@ -1,0 +1,14 @@
+<!--miniprogram/pages/addPet/addPet.wxml-->
+<text>miniprogram/pages/addPet/addPet.wxml</text>
+<form bindsubmit="submitPet">
+<input name="content" placeholder="name of dog parent"></input>
+<input name="dog" placeholder="name of dog 1"></input>
+<input name="dogimage" bindtap="listenerBtnChooseImage" placeholder="tap uploadt"></input>
+<!-- <input typename="dogimage"> <button type="primary" bindtap="listenerBtnChooseImage">Upload Image</button></input> -->
+<!-- Display the image user upload -->
+<image src="{{src}}" mode="aspecFill"  bindlongtap="imgLongTap"/>
+<button form-type="submit">Submit pet</button>
+</form>
+<view class="flex-h space-between mv-20">
+  <text class="black-2">Logo</text> <text class="ml-20 h2 yellow" bindtap="addImages" data-type="logo">Add Logo +</text>
+</view>
